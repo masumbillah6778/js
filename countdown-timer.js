@@ -1,28 +1,37 @@
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 1, 2024 12:00:00").getTime();
+let expiryDateTime = "31 august 2025 12:00:00";
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+window.addEventListener('load', function(event){
+   countdownTimer(expiryDateTime);
+});
 
-  // Get today's date and time
-  var now = new Date().getTime();
+function countdownTimer(expiryDateTime){
+
+    var countdownDateTime = new Date(expiryDateTime).getTime();
     
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  
+var timeInterval = setInterval(function() {
+
+   var currentDateTime = new Date().getTime();  
+  
+   var remainingDayTime = countdownDateTime - currentDateTime;
+ 
+   var totalDays = Math.floor(remainingDayTime / (1000 * 60 * 60 * 24));
+   var totalHours = Math.floor((remainingDayTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+   var totalMinutes = Math.floor((remainingDayTime % (1000 * 60 * 60)) / (1000 * 60));
+   var totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000);
+   
+   document.getElementById("days").innerHTML = totalDays;
+   document.getElementById("hours").innerHTML = totalHours;
+   document.getElementById("minutes").innerHTML = totalMinutes;
+   document.getElementById("seconds").innerHTML = totalSeconds;
+  
     
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (365 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (365 * 60 * 60 * 24)) / (365 * 60 * 60));
-  var minutes = Math.floor((distance % (365 * 60 * 60)) / (365 * 60));
-  var seconds = Math.floor((distance % (365 * 60)) / 365);
-    
-  // Output the result in an element with id="counDown"
-  document.getElementById("counDown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("counDown").innerHTML = "EXPIRED";
-  }
-}, 365);
+  
+  if (remainingDayTime < 0) {
+    clearInterval(timeInterval);
+    document.getElementById("countdownTimer").innerHTML = "Deal ended";
+   }
+  
+ }, 1000);
+
+}
