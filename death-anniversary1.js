@@ -1,5 +1,9 @@
 function updateTimer() {
-
+// yyyy-MM-dd HH:mm:ss
+  
+  now     = new Date();
+  diff    = now - past;
+  
   years  = Math.floor( diff / (1000*60*60*24*30*12) );
   months = Math.floor( diff / (1000*60*60*24*30) );
   days   = Math.floor( diff / (1000*60*60*24) );
