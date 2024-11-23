@@ -1,3 +1,4 @@
+/*=========== Audio ===========*/
 const wrapper = document.querySelector(".wrapper"),
   musicImg = wrapper.querySelector(".img-area img"),
   musicName = wrapper.querySelector(".song-details .name"),
@@ -5,7 +6,7 @@ const wrapper = document.querySelector(".wrapper"),
   playPauseBtn = wrapper.querySelector(".play-pause"),
   prevBtn = wrapper.querySelector("#prev"),
   nextBtn = wrapper.querySelector("#next"),
-  mainAudio = wrapper.querySelector("#main-audio"),
+  mainAudio = wrapper.querySelector("#mainaudio"),
   progressArea = wrapper.querySelector(".progress-area"),
   progressBar = progressArea.querySelector(".progress-bar"),
   musicList = wrapper.querySelector(".music-list"),
@@ -29,6 +30,10 @@ function changeBackgroundColor() {
 // Call the function to start the animation
 changeBackgroundColor();
 
+  
+  
+  
+/*========== Control ===========*/
 // Add an event listener to update the background when music is played or paused
 mainAudio.addEventListener("play", changeBackgroundColor);
 mainAudio.addEventListener("pause", changeBackgroundColor);
@@ -192,6 +197,23 @@ mainAudio.addEventListener("timeupdate", (e) => {
     updateProgressBar(currentTime);
   }
 });
+  
+  
+  
+/*=========== Volume ===========*/
+var mainaudio = document.getElementById("mainaudio");
+var slider1 = document.getElementById("slider1");
+var display1 = document.getElementById("display1");
+
+slider1.addEventListener("input", sliderActions);
+
+function sliderActions( )
+{
+  var newVolume = slider1.value;
+
+  display1.innerText = newVolume; // range 0 to 100
+  mainaudio.volume = newVolume / 100; // range 0 to 1 
+}
 
 
 //change loop, shuffle, repeat icon onclick
