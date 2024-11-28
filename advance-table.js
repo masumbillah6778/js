@@ -2,7 +2,7 @@ function filterTable() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
-  table = document.getElementById("advanced-table");
+  table = document.getElementById("advance-table");
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
