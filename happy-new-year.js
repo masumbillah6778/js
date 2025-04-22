@@ -1,4 +1,4 @@
-const newYear = "1 Jan 2025"
+const newYear = "1 Jan 2026"
 const timerDays = document.querySelector("#days");
 const timerHours = document.querySelector("#hours");
 const timerMinutes = document.querySelector("#minutes");
