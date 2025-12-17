@@ -12,14 +12,14 @@ $(document).ready(function () {
 
     function changeBackground() {
         // Change background with zoom-in effect
-        $(".background-container").css({
+        $(".background-images-change").css({
             'background-image': 'url(' + images[index] + ')',
             'transform': 'scale(1.1)' // You can adjust the scale factor
         });
 
         // Reset the transform property after the animation
         setTimeout(function () {
-            $(".background-container").css('transform', 'scale(1)');
+            $(".background-images-change").css('transform', 'scale(1)');
         }, 1000);
 
         // Move to the next image
