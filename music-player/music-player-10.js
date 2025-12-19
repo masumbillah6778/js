@@ -1,5 +1,5 @@
 'use strict';
-/*const musicData = [
+const musicData = [
   {
     backgroundImage: "https://masumbillah6778.github.io/images/music-thumbnail-10.jpg",
     posterUrl: "https://masumbillah6778.github.io/images/music-thumbnail-10.jpg",
@@ -45,7 +45,7 @@
     artist: "No Spirit",
     musicPath: "./assets/music/music-5.mp3",
   },
-];*/
+];
 
 
 
