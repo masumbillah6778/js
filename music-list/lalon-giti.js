@@ -1,8 +1,8 @@
 'use strict';
 const musicData = [
   {
-    backgroundImage: "https://masumbillah6778.github.io/images/music-thumbnail-10.jpg",
-    posterUrl: "https://masumbillah6778.github.io/images/music-thumbnail-10.jpg",
+    backgroundImage: "https://masumbillah6778.github.io/images/lalon.png",
+    posterUrl: "https://masumbillah6778.github.io/images/lalon.png",
     title: "1. Piya Re",
     album: "No Spirit",
     year: 2025,
@@ -10,8 +10,8 @@ const musicData = [
     musicPath: "https://github.com/masumbillah6778/best-of-zubeen-garg/raw/main/piya-re-piya-re.mp3",
   },
   {
-    backgroundImage: "https://masumbillah6778.github.io/images/singer/akash-mahmud.jpg",
-    posterUrl: "https://masumbillah6778.github.io/images/singer/akash-mahmud.jpg",
+    backgroundImage: "https://masumbillah6778.github.io/images/lalon.png",
+    posterUrl: "https://masumbillah6778.github.io/images/lalon.png",
     title: "2. We Are Going To Be Ok (Master)",
     album: "No Spirit",
     year: 2022,
@@ -19,8 +19,8 @@ const musicData = [
     musicPath: "https://github.com/masumbillah6778/best-of-zubeen-garg/raw/main/piya-re-piya-re.mp3",
   },
   {
-    backgroundImage: "./assets/images/poster-3.jpg",
-    posterUrl: "https://masumbillah6778.github.io/images/singer/akash-mahmud.jpg",
+    backgroundImage: "https://masumbillah6778.github.io/images/lalon.png",
+    posterUrl: "https://masumbillah6778.github.io/images/lalon.png",
     title: "Winter Meadow",
     album: "No Spirit",
     year: 2022,
@@ -28,8 +28,8 @@ const musicData = [
     musicPath: "./assets/music/music-3.mp3",
   },
   {
-    backgroundImage: "./assets/images/poster-4.jpg",
-    posterUrl: "https://masumbillah6778.github.io/images/singer/akash-mahmud.jpg",
+    backgroundImage: "https://masumbillah6778.github.io/images/lalon.png",
+    posterUrl: "https://masumbillah6778.github.io/images/lalon.png",
     title: "From Where We Started",
     album: "No Spirit",
     year: 2022,
@@ -37,8 +37,8 @@ const musicData = [
     musicPath: "./assets/music/music-4.mp3",
   },
   {
-    backgroundImage: "./assets/images/poster-5.jpg",
-    posterUrl: "https://masumbillah6778.github.io/images/singer/akash-mahmud.jpg",
+    backgroundImage: "https://masumbillah6778.github.io/images/lalon.png",
+    posterUrl: "https://masumbillah6778.github.io/images/lalon.png",
     title: "Where I Found You",
     album: "No Spirit",
     year: 2022,
