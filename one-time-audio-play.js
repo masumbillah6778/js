@@ -6,8 +6,8 @@ const audio = new Audio();
 $(document).ready(function () {
   const playlist = [
     {
-      name: "Dry Catalic",
-      artist: "Twenty Four Games",
+      name: "অডিওটি শুধুমাত্র একবার শুনতে পারবেন",
+      artist: "One Time Audio",
       src: "https://masumbillah6778bd.github.io/bangladesh-mix-music/biye-kora-mane.mp3"
     }
   ];
