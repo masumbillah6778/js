@@ -1,4 +1,4 @@
-var emptyRow = "<tr><td colspan='10' class='text-center'> কোনো তথ্য এন্ট্রি নেই! 😡 </td></tr>";
+var emptyRow = "<tr><td colspan='10' class='text-center'> কোনো তথ্য এন্ট্রি নেই ! 😡 </td></tr>";
     $(document).ready(function () {
       loadDataFromLocal();
       $('#tblData').on('click', '.btn-edit', function () {
