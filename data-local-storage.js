@@ -97,8 +97,8 @@ var emptyRow = "<tr><td colspan='10' class='text-center'> কোনো তথ্
           dynamicTR = dynamicTR + "<td class='txtDate'>" + element.date + "</td>";
           dynamicTR = dynamicTR + "<td class='txtMemorandum'>" + element.memorandum + "</td>";
           dynamicTR = dynamicTR + "    <td class='tdAction text-center'>";
-          dynamicTR = dynamicTR + "        <button class='btn btn-sm btn-success btn-edit'> Edit</button>";
-          dynamicTR = dynamicTR + "        <button class='btn btn-sm btn-danger btn-delete'> Delete</button>";
+          dynamicTR = dynamicTR + "        <button class='btn btn-sm btn-success btn-edit'> </button>";
+          dynamicTR = dynamicTR + "        <button class='btn btn-sm btn-danger btn-delete'> </button>";
           dynamicTR = dynamicTR + "    </td>";
           dynamicTR = dynamicTR + " </tr>";
           $("#tblData tbody").append(dynamicTR);
