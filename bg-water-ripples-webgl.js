@@ -9,7 +9,7 @@ var Birds = function()
     var width;
     var height;
 
-    var body;
+    var canvas;
     var engine;
 
     var birds;
@@ -35,14 +35,14 @@ var Birds = function()
 
     var prepare = function()
     {
-        body = document.getElementsByTagName('body')[0];
-        engine = body.getContext('2d');
+        canvas = document.getElementsByTagName('canvas')[0];
+        engine = canvas.getContext('2d');
 
         width  = window.innerWidth;
         height = window.innerHeight;
 
-        body.setAttribute('width', width);
-        body.setAttribute('height', height);
+        canvas.setAttribute('width', width);
+        canvas.setAttribute('height', height);
 
         bgTop = engine.createLinearGradient(0, 0, 0, height / 2);
         bgTop.addColorStop(0, '#000');
