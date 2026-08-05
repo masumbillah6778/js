@@ -19,11 +19,11 @@ function updateTimer() {
   s = secs   - mins   * 60;
   document.getElementById("timer")
     .innerHTML =
-      '<div>' + y + '<span>years</span></div>' +
-      '<div>' + M + '<span>months</span></div>' +
-      '<div>' + d + '<span>days</span></div>' +
-      '<div>' + h + '<span>hours</span></div>' +
-      '<div>' + m + '<span>minutes</span></div>' +
-      '<div>' + s + '<span>seconds</span></div>' ;
+      '<div>' + y + '<span> বছর </span></div>' +
+      '<div>' + M + '<span> মাস </span></div>' +
+      '<div>' + d + '<span> দিন </span></div>' +
+      '<div>' + h + '<span> ঘন্টা </span></div>' +
+      '<div>' + m + '<span> মিনিট </span></div>' +
+      '<div>' + s + '<span> সেকেন্ড </span></div>' ;
 }
 setInterval('updateTimer()', 1000 );
