@@ -1,31 +1,5 @@
-<style>
-  .clock {
-    font-size: 22px;
-    font-weight: 700;
-    white-space: nowrap;
-}
+// বাংল ঘড়ি 
 
-.date-part {
-    color: red;
-}
-
-.time-part {
-    color: green;
-}
-
-.separator {
-    color: #fff;
-    margin: 0 14px;
-}
-</style>
-
-<div class="clock">
-    <span id="banglaDate" class="date-part"></span>
-    <span class="separator"> । </span>
-    <span id="banglaTime" class="time-part"></span>
-</div>
-
-<script>
 function toBanglaNumber(value) {
     const english = "0123456789";
     const bangla = "০১২৩৪৫৬৭৮৯";
@@ -64,4 +38,3 @@ function updateBanglaClock() {
 
 updateBanglaClock();
 setInterval(updateBanglaClock, 1000);
-</script>
