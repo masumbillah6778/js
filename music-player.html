@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>TV Remote Audio Player</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      background: #fff;
+      font-family: Arial, sans-serif;
+    }
+    main {
+      width: min(100%, 1000px);
+    }
+    audio {
+      display: block;
+      width: 100%;
+      min-width: 260px;
+      height: 72px;
+      outline: none;
+    }
+    /* Visible focus indicator for TV remotes and keyboard navigation */
+    audio:focus-visible {
+      outline: 4px solid #168de2;
+      outline-offset: 5px;
+      border-radius: 42px;
+    }
+    .hint {
+      margin: 16px 4px 0;
+      color: #555;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .status {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Keep your MP3 file in the same GitHub repository as this index.html -->
+    <audio id="player" controls preload="metadata" tabindex="0"
+           aria-label="Audio player">
+      <source src="./horse.mp3" type="audio/mpeg">
+      আপনার ব্রাউজার অডিও চালাতে পারছে না।
+    </audio>
+
+    <p class="hint">
+      টিভির রিমোট দিয়ে আগে প্লেয়ারে ফোকাস করুন। এরপর OK/Enter দিয়ে Play/Pause
+      করুন। Left/Right দিয়ে সময় এগিয়ে-পিছিয়ে এবং Volume বাটন দিয়ে শব্দ নিয়ন্ত্রণ
+      করুন—এগুলো টিভির ব্রাউজারভেদে ভিন্ন হতে পারে।
+    </p>
+    <span id="status" class="status" aria-live="polite"></span>
+  </main>
+
+  <script>
+    const player = document.getElementById("player");
+    const status = document.getElementById("status");
+
+    // TV remote/media-key support where the browser exposes these keys.
+    document.addEventListener("keydown", (event) => {
+      const key = event.key;
+
+      if (key === "MediaPlayPause") {
+        event.preventDefault();
+        if (player.paused) player.play().catch(() => {});
+        else player.pause();
+      } else if (key === "MediaPlay") {
+        event.preventDefault();
+        player.play().catch(() => {});
+      } else if (key === "MediaPause") {
+        event.preventDefault();
+        player.pause();
+      } else if (key === "MediaStop") {
+        event.preventDefault();
+        player.pause();
+        try { player.currentTime = 0; } catch (_) {}
+      }
+    });
+
+    player.addEventListener("play", () => {
+      status.textContent = "অডিও চলছে";
+    });
+    player.addEventListener("pause", () => {
+      status.textContent = "অডিও বিরতি";
+    });
+    player.addEventListener("ended", () => {
+      status.textContent = "অডিও শেষ";
+    });
+    player.addEventListener("error", () => {
+      status.textContent = "অডিও ফাইল পাওয়া যায়নি। horse.mp3 ফাইলের নাম ও অবস্থান পরীক্ষা করুন।";
+    });
+  </script>
+</body>
+</html>
