@@ -1,3 +1,34 @@
+// ইংরেজি ঘড়ি
+function updateEnglishClock() {
+    const now = new Date();
+
+    const day = String(now.getDate()).padStart(2, "0");
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const year = now.getFullYear();
+
+    let hour = now.getHours();
+    const minute = String(now.getMinutes()).padStart(2, "0");
+    const second = String(now.getSeconds()).padStart(2, "0");
+
+    const ampm = hour >= 12 ? "PM" : "AM";
+
+    hour = hour % 12;
+    hour = hour || 12;
+    hour = String(hour).padStart(2, "0");
+
+    document.getElementById("englishDate").textContent =
+        `${day}-${month}-${year}`;
+
+    document.getElementById("englishTime").textContent =
+        `${hour}:${minute}:${second} ${ampm}`;
+}
+
+updateEnglishClock();
+setInterval(updateEnglishClock, 1000);
+
+
+
+
 // বাংল ঘড়ি 
 
 function toBanglaNumber(value) {
@@ -38,3 +69,4 @@ function updateBanglaClock() {
 
 updateBanglaClock();
 setInterval(updateBanglaClock, 1000);
+
