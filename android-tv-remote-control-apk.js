@@ -65,9 +65,8 @@
           player.focus({ preventScroll: true });
         });
       })();
-    </script>
 
-    <script>
+
       // TV remote / browser Back key: return to the previous page.
       document.addEventListener("keydown", function (event) {
         const backKeys = ["Escape", "Backspace", "BrowserBack", "GoBack"];
