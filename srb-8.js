@@ -19,8 +19,8 @@
     // প্রতিটি আইকনের সরাসরি ছবির লিংক দিন (PNG, JPG, WEBP ইত্যাদি)।
     // নিচের example.com লিংকগুলো নমুনা—নিজের ছবির URL দিয়ে বদলে দিন।
     const icons = {
-      home: "https://rab-8.github.io/images/srb-8.png",
-      dashboard: "https://rab-8.github.io/images/srb-8.png",
+      home: "https://rab-8.github.io/images/SRB-8.png",
+      dashboard: "https://rab-8.github.io/images/SRB-8.png",
       search: "https://rab-8.github.io/images/calculator.png",
       settings: "https://rab-8.github.io/images/calculator.png",
       users: "https://example.com/users.png",
