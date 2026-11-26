@@ -5,10 +5,10 @@
       অন্য ব্যবহারকারীর জন্য ওয়েবপেজে কোনো সম্পাদনা অপশন দেখানো হয় না।
     */
     const links = [
-      { title: "বকেয়া রেশন ক্যালকুলেটর", url: "https://rab-8.github.io/srb/ration-bokeya-calculator.html", theme: "coral", icon: "home" },
-      { title: "বয়স নির্ণয়কারী ক্যালকুলেটরে", url: "https://rab-8.github.io/html/age-calculator-v2.html", theme: "blue", icon: "dashboard" },
-      { title: "আপডেট চলছে", url: "#", theme: "green", icon: "search" },
-      { title: "আপডেট চলছে", url: "#", theme: "purple", icon: "settings" },
+      { title: "#", url: "#", theme: "coral", icon: "home" },
+      { title: "#", url: "#", theme: "blue", icon: "dashboard" },
+      { title: "বকেয়া রেশন ক্যালকুলেটর", url: "https://rab-8.github.io/srb/ration-bokeya-calculator.html", theme: "green", icon: "search" },
+      { title: "বয়স নির্ণয়কারী ক্যালকুলেটরে", url: "https://rab-8.github.io/html/age-calculator-v2.html", theme: "purple", icon: "settings" },
       { title: "আপডেট চলছে", url: "#", theme: "orange", icon: "users" },
       { title: "আপডেট চলছে", url: "#", theme: "teal", icon: "download" },
       { title: "আপডেট চলছে", url: "#", theme: "royal", icon: "globe" },
@@ -21,8 +21,8 @@
     const icons = {
       home: "https://rab-8.github.io/images/calculator.png",
       dashboard: "https://rab-8.github.io/images/calculator.png",
-      search: "https://example.com/search.png",
-      settings: "https://example.com/settings.png",
+      search: "https://rab-8.github.io/images/calculator.png",
+      settings: "https://rab-8.github.io/images/calculator.png",
       users: "https://example.com/users.png",
       download: "https://example.com/download.png",
       globe: "https://example.com/globe.png",
