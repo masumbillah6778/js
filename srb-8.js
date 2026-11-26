@@ -7,7 +7,7 @@
     const links = [
       { title: "এসআরবি - ৮ ফোনবুক", url: "https://masumbillah6778.github.io/srb-8-phonebook/index.html", theme: "coral", icon: "home" },
       { title: "বদলী সদস্যদের তালিকা", url: "https://rab-8.github.io/rab-8/online-data-storage.html", theme: "blue", icon: "dashboard" },
-      { title: "বকেয়া রেশন ক্যালকুলেটর", url: "https://rab-8.github.io/srb/ration-bokeya-calculator.html", theme: "green", icon: "search" },
+      { title: "বকেয়া রেশন ক্যালকুলেটর", url: "https://masumbillah6778.github.io/html/ration-bokeya-calculator.html", theme: "green", icon: "search" },
       { title: "বয়স নির্ণয়কারী ক্যালকুলেটরে", url: "https://rab-8.github.io/html/age-calculator-v2.html", theme: "purple", icon: "settings" },
       { title: "আপডেট চলছে", url: "#", theme: "orange", icon: "users" },
       { title: "আপডেট চলছে", url: "#", theme: "teal", icon: "download" },
