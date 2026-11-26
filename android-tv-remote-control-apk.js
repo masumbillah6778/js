@@ -3,7 +3,6 @@
          Play / Pause + Existing Remote Controls
          ================================================== -->
 
-    <script>
 
       (function () {
 
